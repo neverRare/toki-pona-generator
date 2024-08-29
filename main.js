@@ -48,7 +48,7 @@ function resizeTextarea() {
   input.style.height = `${Math.max(50, input.scrollHeight + 20)}px`;
 }
 document.addEventListener("DOMContentLoaded", () => {
-  input = Document.addEventListener("input");
+  input = Document.getElementById("input");
   resizeTextarea();
   input.addEventListener("input", resizeTextarea);
   document.getElementById("clear").addEventListener("click", () => {
