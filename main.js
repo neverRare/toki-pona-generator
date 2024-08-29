@@ -1,5 +1,6 @@
 let fetched = fetch("./data.json");
 let data;
+let input;
 
 class GenerationError extends Error {}
 
@@ -41,17 +42,19 @@ function add() {
     }
   }
 }
+function resizeTextarea() {
+  input.style.height = "auto";
+  input.style.height = `${Math.max(50, input.scrollHeight + 20)}px`;
+}
 document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("input");
-  // Auto resize
-  function resizeTextarea() {
-    input.style.height = "auto";
-    input.style.height = `${Math.max(50, input.scrollHeight + 20)}px`;
-  }
+  input = Document.addEventListener("input");
   resizeTextarea();
   input.addEventListener("input", resizeTextarea);
   document.getElementById("clear").addEventListener("click", () => {
     document.getElementById("input").value = "";
+    if (input != null) {
+      resizeTextarea();
+    }
   });
   fetched
     .then((data) => data.text())
