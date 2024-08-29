@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 
   margin: 5px;
   display: flex;
@@ -16,6 +16,9 @@ body {
   margin-bottom: 10px;
 
   resize: none;
+
+  background-color: inherit;
+  color: inherit;
 }
 .button-place {
   display: flex;
@@ -46,9 +49,17 @@ body {
 }
 #number {
   border-color: gray;
-  width: 120px;
+  background-color: inherit;
+  color: inherit;
+  width: 100px;
 }
 #number:focus {
   border-color: #18e;
   width: 120px;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
 }
