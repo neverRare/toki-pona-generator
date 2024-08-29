@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+#input {
+  font-family: inherit;
+  font-size: inherit;
+
+  text-align: center;
+
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+  resize: none;
+}
+.button-place {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button-place > * {
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+
+  margin-top: 10px;
+  padding: 5px;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: transparent;
+  border-radius: 10px;
+}
+.button-place > button {
+  border-color: #18e;
+  background-color: #18e;
+  color: white;
+}
+.button-place > button:disabled {
+  border-color: gray;
+  background-color: gray;
+}
+#number {
+  border-color: gray;
+  width: 120px;
+}
+#number:focus {
+  border-color: #18e;
+  width: 120px;
+}
