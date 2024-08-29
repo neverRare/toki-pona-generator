@@ -5,7 +5,7 @@ let input;
 class GenerationError extends Error {}
 
 function addOne() {
-  const text = document.getElementById("input")
+  const text = input
     .value
     .toLowerCase()
     .trim()
@@ -26,7 +26,7 @@ function addOne() {
   });
   const random = Math.random() * total;
   const word = space.find(([max, _]) => random < max)[1];
-  document.getElementById("input").value += ` ${word}`;
+  input.value += ` ${word}`;
 }
 function add() {
   const number = Number.parseInt(document.getElementById("number").value);
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   resizeTextarea();
   input.addEventListener("input", resizeTextarea);
   document.getElementById("clear").addEventListener("click", () => {
-    document.getElementById("input").value = "";
+    input.value = "";
     if (input != null) {
       resizeTextarea();
     }
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const button = document.getElementById("generate");
       button.disabled = false;
       button.addEventListener("click", add);
-      document.getElementById("input").addEventListener("keydown", (event) => {
+      input.addEventListener("keydown", (event) => {
         if (event.code === "Enter") {
           event.preventDefault();
           add();
