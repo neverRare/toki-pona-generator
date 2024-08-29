@@ -21,6 +21,7 @@ body {
   color: inherit;
 }
 .button-place {
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
