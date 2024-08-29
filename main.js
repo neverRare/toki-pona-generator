@@ -41,6 +41,7 @@ function add() {
       throw error;
     }
   }
+  resizeTextarea();
 }
 function resizeTextarea() {
   input.style.height = "auto";
