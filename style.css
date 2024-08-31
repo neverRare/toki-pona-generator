@@ -49,6 +49,10 @@ a:visited {
   background-color: #18e;
   color: white;
 }
+.button-place > button:active {
+  border-color: #148;
+  background-color: #148;
+}
 .button-place > button:disabled {
   border-color: gray;
   background-color: gray;
