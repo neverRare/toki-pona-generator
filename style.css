@@ -70,6 +70,12 @@ a:visited {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
+#generate:active + #number {
+  border-color: #148;
+}
+#generate:disabled + #number {
+  border-color: gray;
+}
 #number:focus {
   border-color: #8ce;
 }
