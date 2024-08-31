@@ -53,15 +53,21 @@ a:visited {
   border-color: gray;
   background-color: gray;
 }
+#generate {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
 #number {
-  border-color: gray;
+  border-color: #18e;
   background-color: inherit;
   color: inherit;
   width: 100px;
+
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 #number:focus {
-  border-color: #18e;
-  width: 120px;
+  border-color: #8ce;
 }
 footer {
   font-size: 20px;
