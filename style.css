@@ -45,8 +45,8 @@ a:visited {
   border-radius: 10px;
 }
 .button-place > button {
-  border-color: #18e;
-  background-color: #18e;
+  border-color: #0b599d;
+  background-color: #0b599d;
   color: white;
 }
 .button-place > button:active {
@@ -54,15 +54,15 @@ a:visited {
   background-color: #148;
 }
 .button-place > button:disabled {
-  border-color: gray;
-  background-color: gray;
+  border-color: #595959;
+  background-color: #595959;
 }
 #generate {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 #number {
-  border-color: #18e;
+  border-color: #0b599d;
   background-color: inherit;
   color: inherit;
   width: 100px;
@@ -74,7 +74,7 @@ a:visited {
   border-color: #148;
 }
 #generate:disabled + #number {
-  border-color: gray;
+  border-color: #595959;
 }
 #number:focus {
   border-color: #8ce;
