@@ -5,6 +5,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+a {
+  color: #0057af;
+}
+a:visited {
+  color: #551a8b;
+}
 #input {
   font-size: 30px;
   font-family: inherit;
@@ -68,5 +74,11 @@ footer {
   body {
     background-color: black;
     color: white;
+  }
+  a {
+    color: #3197ff;
+  }
+  a:visited {
+    color: #b47de7;
   }
 }
