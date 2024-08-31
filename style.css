@@ -1,14 +1,13 @@
 body {
   font-family: sans-serif;
-  font-size: 30px;
 
   margin: 5px;
   display: flex;
   flex-direction: column;
 }
 #input {
+  font-size: 30px;
   font-family: inherit;
-  font-size: inherit;
 
   text-align: center;
 
@@ -57,6 +56,13 @@ body {
 #number:focus {
   border-color: #18e;
   width: 120px;
+}
+footer {
+  font-size: 20px;
+  text-align: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 @media (prefers-color-scheme: dark) {
   body {
